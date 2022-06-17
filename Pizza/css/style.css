@@ -63,9 +63,13 @@ body > section > article {
 
 }
 #envio {
-    background-image: url(/Pizza/img/delivery.jpg);
+    background-image: url(../img/delivery.jpg);
     margin-right: 2.5px;
 }
 #top5 {
     margin-left: 2.5px;
+}
+
+.verde span {
+    color: aqua;
 }

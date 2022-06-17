@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #E5E5E5;
+}
+article {
+    margin: 150px 15px;
+    width: 300px;
+    position: relative;
+    background-color: #F3F3F3;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    box-shadow: 1px 1px 5px #888888;
+    display: inline-block;
+}
+h4 {
+    background-color: #1CD1B0;
+    font-size: 15px;
+    padding: 10px;
+}
+h1 {
+    background-color: #00669F;
+    font-size: 40px;
+    padding: 28px 0px 26px 28px;
+    box-shadow: 5px 10px 18px #888888;
+}
+article > p {
+    padding: 10px 16px;
+}
+h2 {
+    text-align: center;
+    margin-top: 73px;
+}
+h3 {
+    background-color: #00669F;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 36px;
+    display: inline-block;
+    margin: 36px auto 18px;
+}
+article > h3 {
+    text-align: center;
+}
+.avatar {
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px #0f0f0f;
+    position: absolute;
+    left: 90px;
+    top: 128px;
+}
+.corazon {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+footer > h4 {
+    background-color: #00669F;
+    color: #fff;
+    padding: 16px;
+}
+body > section > article {
+    text-align: center;
+}
+article > p {
+    text-align: left;
+}
+section {
+    width: max-content;
+    margin: 0px auto;
+}
