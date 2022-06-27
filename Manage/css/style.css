@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+/* Common styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #232C51;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+h1 {
+    font-size: 3.625rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+/* h3 {
+    font-size: 1rem;
+} */
+
+h4 {
+    font-size: 1rem;
+    margin: 20px 0px;
+}
+
+button {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 0.875rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: white;
+    background-color: #F25F3A;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #F98F75;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* Header styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 165px;
+}
+
+header > nav > ul {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > nav > ul > li {
+    padding: 0px 14px;
+    font-size: 0.8125rem;
+}
+
+header > i.fa-solid.fa-bars {
+    display: none;
+}
+
+header > nav > ul > li > a:hover {
+    color: #8F94A7;
+}
+
+header > nav > ul > li > a:active {
+    color: #F25F3A;
+}
+
+/* header > nav > ul > li > a:visited {
+    color: #232C51;
+} */
+
+/* Hero section */
+
+main > section {
+    padding: 0px 165px 100px;    
+    display: flex;
+    align-items: center;
+}
+
+main > section > article > p {
+    margin: 28px 0px;
+    color: black;
+}
+
+main > section > img {
+    display: inline-block;
+    width: 580px;
+}
+
+/* Characteristics section */
+
+ol {
+    list-style: none;
+    counter-reset: cool-numbers;
+    font-weight: 700;
+    padding-left: 0px;
+    margin-left: 125px;
+}
+
+ol > li {
+    counter-increment: cool-numbers;
+    margin: 1rem 0rem;
+}
+
+ol > li::before {
+    content: "0" counter(cool-numbers);
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    padding: 10px 25px;
+    margin-right: 25px;
+    border-radius: 2rem;
+    color: white;
+    background-color: #F25F3A;
+}
+
+main > section > article > ol > p {
+    padding-left: 95px;
+    color: #B3B2B7;
+    font-weight: 500;
+}
+
+/* Reviews section */
+
+section#reviews {
+    flex-direction: column;
+}
+
+section#reviews > div {
+    display: flex;
+}
+
+section#reviews > div > article {
+    width: 430px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: #FAFAFA;
+    position: relative;
+    margin: 110px 0px 45px;
+}
+
+section#reviews > div > article > img {
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - (70px / 2));
+    top: -35px;
+}
+
+/* Start section */
+
+section#start {
+    background-color: #F25F3A;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    justify-content: space-between;
+}
+
+section#start > h2 {
+    width: 440px;
+}
+
+section#start > button {
+    background-color: white;
+    color: #F25F3A;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1D1E25;
+}
+
+
+
+
+
+
