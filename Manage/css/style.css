@@ -14,23 +14,30 @@ body {
     color: #232C51;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #F98F75;
+}
+
 a {
     text-decoration: none;
     transition: all 0.3s ease 0s;
 }
 
-h1 {
-    font-size: 3.625rem;
-    font-weight: 700;
-}
-
 h2 {
     font-size: 2.25rem;
 }
-
-/* h3 {
-    font-size: 1rem;
-} */
 
 h4 {
     font-size: 1rem;
@@ -51,6 +58,11 @@ button {
     transition: all 0.3s ease 0s;
 }
 
+button:focus {
+    background-color: #F98F75;
+    transform: translateY(-3px);
+}
+
 button:hover {
     background-color: #F98F75;
     transform: translateY(-3px);
@@ -66,23 +78,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 65px 165px;
+    padding: 65px 25px;
 }
 
-header > nav > ul {
-    list-style: none;
-    padding-left: 0px;
-    display: flex;
-    justify-content: space-between;
+header > nav {
+    display: none;
 }
 
-header > nav > ul > li {
-    padding: 0px 14px;
-    font-size: 0.8125rem;
+header > button {
+    display: none;
 }
 
 header > i.fa-solid.fa-bars {
-    display: none;
+    display: block;
+}
+
+header > nav > ul > li > a:visited {
+    color: #232C51;
+}
+
+header > nav > ul > li > a:focus {
+    color: #8F94A7;
 }
 
 header > nav > ul > li > a:hover {
@@ -93,36 +109,60 @@ header > nav > ul > li > a:active {
     color: #F25F3A;
 }
 
-/* header > nav > ul > li > a:visited {
-    color: #232C51;
-} */
-
 /* Hero section */
 
 main > section {
-    padding: 0px 165px 100px;    
+    padding: 0px 25px 100px;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-main > section > article > p {
+main > section#hero > article {
+    order: 1;
+}
+
+main > section#hero > article > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+main > section#hero > article > p {
+    font-size: 0.75rem;
+    text-align: center;
     margin: 28px 0px;
     color: black;
 }
 
-main > section > img {
+main > section#hero > article > button {
+    margin: 0px auto;
+}
+
+main > section#hero > img {
     display: inline-block;
-    width: 580px;
+    width: 100%;
 }
 
 /* Characteristics section */
+
+main > section#functions {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+}
+
+main > section#functions article {
+    text-align: center;
+}
 
 ol {
     list-style: none;
     counter-reset: cool-numbers;
     font-weight: 700;
     padding-left: 0px;
-    margin-left: 125px;
+    margin-left: 15px;
+    text-align: left;
 }
 
 ol > li {
@@ -136,14 +176,14 @@ ol > li::before {
     text-align: center;
     width: 20px;
     padding: 10px 25px;
-    margin-right: 25px;
+    margin-right: 15px;
     border-radius: 2rem;
     color: white;
     background-color: #F25F3A;
 }
 
 main > section > article > ol > p {
-    padding-left: 95px;
+    padding-left: 0px;
     color: #B3B2B7;
     font-weight: 500;
 }
@@ -152,6 +192,7 @@ main > section > article > ol > p {
 
 section#reviews {
     flex-direction: column;
+    padding: 0px 70px 100px;
 }
 
 section#reviews > div {
@@ -176,6 +217,11 @@ section#reviews > div > article > img {
     top: -35px;
 }
 
+section#reviews > div > article:nth-child(odd) {
+    display: none;
+}
+
+
 /* Start section */
 
 section#start {
@@ -186,7 +232,8 @@ section#start {
 }
 
 section#start > h2 {
-    width: 440px;
+    /* width: 440px; */
+    color: white;
 }
 
 section#start > button {
@@ -198,9 +245,185 @@ section#start > button {
 
 footer {
     background-color: #1D1E25;
+    height: 250px;
+    padding: 50px 164px;
+    display: flex;
+    justify-content: space-between;
 }
 
+footer a:visited {
+    color: white;
+}
 
+footer a:focus {
+    color: #F25F3A;
+}    
+
+footer a:hover {
+    color: #F25F3A;
+}    
+
+footer a:active {
+    color: #8F94A7;
+}    
+
+/* Footer left */
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+footer > div > div {
+    display: flex;
+    justify-content: space-between;
+}    
+
+/* Footer middle */
+
+footer > ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+footer > ul > li {
+    width: 35%;
+}
+
+/* Footer right */
+
+footer > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer > form > fieldset {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+input[type=email] {
+    width: 200px;
+    padding: 0.875rem 2rem 0.875rem 0.625rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+footer > form > button {
+    padding: 0.875rem 1.4rem;
+    margin-left: 5px;
+}
+
+footer > form > span {
+color: #8C8C94;
+}
+
+@media screen and (min-width: 768px) /* and (max-width: 1440px) */ {
+
+    header {
+        padding: 65px 165px;
+    }
+    
+    header > nav {
+        display: block;
+    }
+
+    header > nav > ul {
+        list-style: none;
+        padding-left: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header > nav > ul > li {
+        padding: 0px 14px;
+        font-size: 0.8125rem;
+    }
+    
+    header > button {
+        display: inline-block;
+    }
+
+    header > i.fa-solid.fa-bars {
+        display: none;
+    }
+    
+    /* Hero section */
+    
+    main > section {
+        padding: 0px 165px 100px;    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    main > section#hero > article {
+        order: 0;
+    }
+
+    main > section#hero > article > h1 {
+        font-size: 3.625rem;
+        font-weight: 700;
+        text-align: left;
+    }
+    
+    main > section#hero > article > p {
+        font-size: 1rem;
+        text-align: left;
+        margin: 28px 0px;
+        color: black;
+    }
+    
+    main > section#hero > img {
+        display: inline-block;
+        width: 580px;
+    }
+
+    section#reviews > div > article:nth-child(odd) {
+        display: block;
+    }
+    
+    /* Characteristics section */
+    
+    main > section#functions {
+        padding: 0px 165px 100px;    
+    }
+    
+    main > section#functions article {
+        text-align: left;
+    }
+    
+
+    ol {
+        margin-left: 125px;
+    }
+    
+    ol > li::before {
+        margin-right: 25px;
+    }
+
+    main > section > article > ol > p {
+        padding-left: 95px;
+    }
+
+    /* Reviews section */
+
+
+
+
+
+
+
+
+}
 
 
 

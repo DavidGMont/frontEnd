@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
     <title>Manage</title>
 </head>
@@ -24,7 +25,7 @@
         <i class="fa-solid fa-bars"></i>
     </header>
     <main>
-        <section>
+        <section id="hero">
             <article>
                 <h1>Bring everyone together to build better products.</h1>
                 <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view.</p>
@@ -32,7 +33,7 @@
             </article>
             <img src="./img/statistics.svg" alt="Statistics">
         </section>
-        <section>
+        <section id="functions">
             <article>
                 <h2>What's different about Manage?</h2>
                 <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
@@ -70,20 +71,20 @@
             <button>Get Started</button>
         </section>
         <section id="start">
-            <h2>Simplify hoy your team words today.</h2>
+            <h2>Simplify hoy your team works today.</h2>
             <button>Get Started</button>
         </section>
     </main>
     <footer>
         <div>
             <a href="."><img src="./img/logoWhite.svg" alt="Logo Manage"></a>
-            <span>
+            <div>
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-pinterest"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </span>
+            </div>
         </div>
         <ul>
             <li><a href="#">Home</a></li>
@@ -95,9 +96,11 @@
             <li><a href="#">Provacy Policy</a></li>
         </ul>
         <form action="." method="post">
-            <input type="email" name="email" placeholder="Update in your inbox..." id="email">
-            <button type="submit">Go</button>
-            <span></span>
+            <fieldset>
+                <input type="email" name="email" placeholder="Update in your inbox..." id="email">
+                <button type="submit">Go</button>
+            </fieldset>
+            <span>Copyright 2020. All Rights Reserved.</span>
         </form>
     </footer>
 </body>
