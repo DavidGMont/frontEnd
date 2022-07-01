@@ -49,7 +49,6 @@ h4 {
 
 button {
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 0.8125rem;
     padding: 0.875rem 2rem;
     border: none;
     border-radius: 2rem;
@@ -116,7 +115,6 @@ main > section#hero > article > h1 {
 }
 
 main > section#hero > article > p {
-    font-size: 0.75rem;
     line-height: 2;
     margin: 15px 0px;
     color: black;
@@ -142,7 +140,6 @@ main > section#functions > article {
 }
 
 main > section#functions > article > p {
-    font-size: 0.75rem;
     line-height: 2;
     color: black;
     margin: 30px 45px 14px;
@@ -206,7 +203,7 @@ section#reviews > div > article {
     text-align: center;
     background-color: #FAFAFA;
     position: relative;
-    margin: 110px 0px 45px;
+    margin: 110px 0px 0px;
     line-height: 2;
 }
 
@@ -228,6 +225,12 @@ section#reviews > div > article > img {
 
 section#reviews > div > article:nth-child(odd) {
     display: none;
+}
+
+section#reviews > span {
+    padding: 25px 0px;
+    font-size: 0.75rem;
+    color: #F25F3A;
 }
 
 /* Start section */
@@ -258,7 +261,6 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    font-size: 0.625rem;
 }
 
 footer a {
@@ -278,7 +280,7 @@ footer > div {
 footer > div > span {
     order: 2;
     margin: auto;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     color: #8C8C94;
 }
 
@@ -302,8 +304,6 @@ footer > ul {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    /* flex-direction: column; */
-    /* height: 160px; */
 }
 
 footer > ul > li {
@@ -342,7 +342,7 @@ footer > form > span {
     display: none;
 }
 
-@media screen and (min-width: 769px) /* and (max-width: 1440px) */ {
+@media screen and (min-width: 769px) {
 
     /* Header styles */
 
@@ -363,7 +363,6 @@ footer > form > span {
     
     header > nav > ul > li {
         padding: 0px 14px;
-        font-size: 0.8125rem;
     }
     
     header > nav > ul > li > a:visited {
@@ -408,7 +407,6 @@ footer > form > span {
     }
     
     main > section#hero > article > p {
-        font-size: 1rem;
         line-height: normal;
         text-align: left;
         margin: 30px 0px;
@@ -420,7 +418,6 @@ footer > form > span {
     
     main > section#hero > img {
         display: inline-block;
-        width: 580px;
     }
 
     section#reviews > div > article:nth-child(odd) {
@@ -438,7 +435,6 @@ footer > form > span {
     }
     
     main > section#functions > article > p {
-        font-size: 1rem;
         line-height: normal;
         margin: 30px 0px 0px;
     }
@@ -469,9 +465,14 @@ footer > form > span {
     section#reviews > div > article {
         width: 33.333%;
         line-height: normal;
+        margin-bottom: 50px;
     }
     section#reviews > div > article > h4 {
         padding-top: 20px;
+    }
+
+    section#reviews > span {
+        display: none;
     }
     
     /* Start section */
@@ -493,7 +494,6 @@ footer > form > span {
         flex-direction: row;
         padding: 50px 165px;
         height: 250px;
-        font-size: 1rem;
     }
 
     footer a:visited {
@@ -548,16 +548,4 @@ footer > form > span {
     footer > div > span {
         display: none;
     }
-
-    
-
-
-
-
-
-
 }
-
-
-
-
